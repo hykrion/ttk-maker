@@ -12,7 +12,7 @@ Aquí tienes un ejemplo imitando el tema [Forest](https://github.com/rdbende/For
 ![forest-light](/img/ttk-cloner-forest-light.png)
 
 ## Dark
-![forest-dark](/img/ttk-cloner-forest-dark.png)
+![forest-dark](/img/ttk-cloner-forest-drak.png)
 
 Este programa es un trabajo en progreso.
 
