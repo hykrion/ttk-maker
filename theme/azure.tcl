@@ -1,7 +1,7 @@
 # Copyright (c) 2021 rdbende <rdbende@gmail.com>
 
 # The Azure theme is a beautiful modern ttk theme inspired by Microsoft's fluent design.
-package provide ttk::theme::azure-dark 2.0
+package provide ttk::theme::azure 2.0
 
 package require Tk 8.6
 
@@ -20,7 +20,7 @@ namespace eval ttk::theme::azure {
         -disabledfg  "#ffffff"
         -disabledbg  "#737373"
         -selectfg    "#ffffff"
-        -selectbg    "#217346"
+        -selectbg    "#80ff80"
       }  
     } elseif {$mode == "light"} {
       array set colors {
@@ -29,7 +29,7 @@ namespace eval ttk::theme::azure {
         -disabledfg  "#737373"
         -disabledbg  "#ffffff"
         -selectfg    "#ffffff"
-        -selectbg    "#217346"
+        -selectbg    "#80ff80"
       }
     }
     [namespace current]::Load_images [file join [file dirname [info script]] theme $mode]

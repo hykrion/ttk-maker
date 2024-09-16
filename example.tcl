@@ -1,7 +1,5 @@
 package require Tk
 
-source azure-setup.tcl
-
 array set ui {
   mode dark
   unchecked 0
@@ -186,8 +184,15 @@ proc ui_init_right {} {
 # +++++++++++++++++++++++++++++++++++++++++++++++
 # +++++++++++++++++++++++++++++++++++++++++++++++
 proc main {} {
-  if {$::argc == 1} {
-    lassign $::argv mode
+  if {$::argc == 2} {
+    lassign $::argv baseTheme mode
+    
+    if {$baseTheme eq "azure"} {
+      source azure-setup.tcl
+    } elseif {$baseTheme eq "forest"} {
+      source forest-setup.tcl
+    }
+
     set_theme $mode
     
     ui_init_grid
@@ -195,7 +200,7 @@ proc main {} {
     ui_init_center
     ui_init_right
   } else {
-    tk_messageBox -message "Usage: example.tcl light/dark"
+    tk_messageBox -message "Usage: example.tcl azure/forest light/dark"
   }
 }
 

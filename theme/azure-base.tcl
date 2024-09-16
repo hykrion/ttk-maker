@@ -1,7 +1,7 @@
 # Copyright (c) 2021 rdbende <rdbende@gmail.com>
 
 # The Azure theme is a beautiful modern ttk theme inspired by Microsoft's fluent design.
-package provide ttk::theme::azure-dark 2.0
+package provide ttk::theme::azure 2.0
 
 package require Tk 8.6
 
